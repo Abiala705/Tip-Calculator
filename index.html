@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="logo text-end m-4">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+    <div class="tip-calculator row pt-2 px-4 py-1">
+      <div class="first-half row m-2 col-12">
+        <label for="bill">Bill</label>
+        <input type="number" id="bill" min="0" placeholder="$142.5" />
+        <div class="select-tip pt-2">
+          <p>Select Tip %</p>
+          <div class="row tip-percent gap-3">
+            <div class="row gap-3 text-center">
+              <div class="col-5 tip text-center pt-2">5%</div>
+              <div class="col-5 tip text-center pt-2">10%</div>
+            </div>
+            <div class="row gap-3 text-center">
+              <div class="col-6 tip text-center pt-2">15%</div>
+              <div class="col-6 tip text-center pt-2">25%</div>
+            </div>
+            <div class="row">
+              <div class="col-6 tip text-center pt-2">50%</div>
+              <div class="col-6 text-center pt-2 custom">
+                <input type="number" id="custom" min="0" placeholder="Custom" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 pt-2">
+          <label class="col-6" for="people">Number of People</label>
+          <label class="col-6 d-none" for="people">Can't be Zero</label>
+        </div>
+        <input type="number" id="people" min="0" placeholder="$" />
+      </div>
+
+      <div class="second-half row pt-2">
+        <div class="tipAmount row justify-content-between">
+          <div class="text col-3">
+            <p class="">Tip Amount</p>
+            <p class="">/ person</p>
+          </div>
+          <div class="totalTipAmount col-3">$4.27</div>
+        </div>
+        <div class="Total">
+          <div class="text">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="totalFig">$32.79</div>
+        </div>
+      </div>
+
+      Total / person Reset
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abiala Israel</a>.
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
