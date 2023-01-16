@@ -56,7 +56,7 @@ label,
   font-size: 12px;
 }
 
-.tip {
+.tips {
   background-color: var(--very-dark-cyan);
   color: white;
   width: 130px;
@@ -64,7 +64,7 @@ label,
   border-radius: 6px;
   font-size: 20px;
 }
-.tip:hover {
+.tip-active {
   color: var(--very-dark-cyan);
   background-color: var(--strong-cyan);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -105,6 +105,11 @@ button {
 
 button:hover {
   background-color: var(--strong-cyan);
+}
+
+.error {
+  display: none;
+  color: red;
 }
 
 @media (min-width: 786px) {
